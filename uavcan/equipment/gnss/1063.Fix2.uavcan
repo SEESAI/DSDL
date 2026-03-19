@@ -108,3 +108,8 @@ float16 pdop
 # Position and velocity solution in ECEF, if available
 #
 ECEFPositionVelocity[<=1] ecef_position_velocity
+
+#
+# Noise information
+#
+int27 noise_per_ms    # GPS noise per millisecond
