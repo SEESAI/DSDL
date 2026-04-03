@@ -112,4 +112,10 @@ ECEFPositionVelocity[<=1] ecef_position_velocity
 #
 # Noise information
 #
-int27 noise_per_ms    # GPS noise per millisecond
+int27 noise_per_ms      # GPS noise per millisecond
+int27 jamming_indicator # indicates jamming is occurring
+uint2 JAMMING_STATE_UNKNOWN  = 0
+uint2 JAMMING_STATE_OK       = 1
+uint2 JAMMING_STATE_WARNING  = 2
+uint2 JAMMING_STATE_CRITICAL = 3
+uint2 jamming_state     # indicates whether jamming has been detected or suspected by the receivers. 0: Unknown, 1: OK, 2: Warning, 3: Critical
